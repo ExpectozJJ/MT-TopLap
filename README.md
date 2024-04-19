@@ -7,15 +7,15 @@
 
 </div>
 
-**Title** - TopoFormer: Multiscale Topology-enabled Structure-to-Sequence Transformer for Protein-Ligand Interaction Predictions.
+**Title** - Potential mutations from animal-adapted SARS-CoV-2 that strengthen infectivity on humans
 
-**Authors** - Dong Chen, Jian Liu, and Guo-wei Wei
+**Authors** - JunJie Wee, Jiahui Chen and Guo-wei Wei
 
 ---
 
 ## Table of Contents
 
-- [TopoFormer](#topoformer)
+- [MT-TopLap](#topoformer)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Model Architecture](#model-architecture)
@@ -23,7 +23,6 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [Datasets](#datasets)
-  - [| Docking   | CASF-2007,2013| 3D poses. Download from https://weilab.math.msu.edu/AGL-Score |](#-docking----casf-20072013-3d-poses-download-from-httpsweilabmathmsueduagl-score-)
   - [Preparing Topologial Sequence](#preparing-topologial-sequence)
   - [Fine-Tuning Procedure for Customized Data](#fine-tuning-procedure-for-customized-data)
   - [Results](#results)
@@ -36,20 +35,19 @@
 ---
 
 ## Introduction
+The COVID-19 pandemic has resulted in a significant SARS-CoV-2 virus evolution, providing a notable advantage in infecting humans using its subvariants. However, such an advantage may not be universal when the virus infect animals. In this work, we hypothesize that as the virus evolution is adapted on animals, it may not necessarily evolve to become more infectious to humans. Nevertheless, there is still a possibility that the virus undergoes a gain-of-function mutation, accelerating virus evolution on humans after evolving on animals. Here, we propose a multitask deep learning model MT-TopLap which simultaneously trains on several deep mutational scanning datasets. MT-TopLap is also validated and finetuned with the largest protein-protein interactions database, SKEMPI 2.0. The resulting MT-TopLap model predicts binding free energy changes upon mutation for RBD binded with human, cat, bat, deer and hamster ACE2 complexes. By comparing the binding free energy changes upon mutation across the different RBD-ACE2s, we identified key RBD mutations such as Q498H in animal-adapted SARS-CoV-2 and R493K in hamster-adapated BA.2 variant having high likelihood to accelerate virus evolution on humans.
 
-Pre-trained deep Transformers have had tremendous success in a wide variety of disciplines. However, in computational biology, essentially all Transformers  are built upon the biological sequences, which ignores vital stereochemical information  and may result in crucial errors in downstream predictions. On the other hand, three-dimensional (3D) molecular structures are incompatible with the sequential architecture of Transformer and natural language processing (NLP) models in general. This work addresses this foundational challenge by a topological Transformer (TopoFormer). TopoFormer is built by integrating NLP and a multiscale topology techniques, the persistent topological hyperdigraph Laplacian (PTHL), which systematically converts intricate 3D protein-ligand complexes at various spatial scales into a NLP-admissible sequence of topological invariants and homotopic shapes. Element-specific PTHLs are further developed to embed crucial physical, chemical, and biological interactions into topological sequences. TopoFormer surges ahead of conventional algorithms and recent deep learning variants and gives rise to exemplary scoring accuracy and superior performance in ranking, docking, and screening tasks in a number of benchmark datasets. The proposed topological sequences can be extracted from all kinds of structural data in data science to facilitate various NLP models,  heralding a new era in AI-driven discovery.
-
-> **Keywords**: Drug design, Topological sequences, Topological Transformer, Multiscale Topology, Hyperdigraph Laplacian.
+> **Keywords**: COVID-19, SARS-CoV-2, BA.2, deep mutational scanning, infectivity, multitask deep learning
 
 ---
 
 ## Model Architecture
 
-Schematic illustration of the overall TopoFormer model is shown in below.
+The multitask deep learning architecture of MT-TopLap model is shown below.
 
-![Model Architecture](Figure_overall_model.png)
+![Model Architecture](MT-TopLap.png)
 
-Further explain the details in the [paper](https://github.com/WeilabMSU/TopoFormer), providing context and additional information about the architecture and its components.
+Further explain the details in the [paper](https://github.com/ExpectozJJ/MT-TopLap), providing context and additional information about the architecture and its components.
 
 ---
 
@@ -57,18 +55,18 @@ Further explain the details in the [paper](https://github.com/WeilabMSU/TopoForm
 
 ### Prerequisites
 
-- transformers              4.24.0
-- numpy                     1.21.5
-- scipy                     1.7.3
-- pytorch                   1.13.1
+- fair-esm                  2.0.0
+- numpy                     1.23.5
+- scipy                     1.11.3
+- torch                     2.1.1
 - pytorch-cuda              11.7
-- scikit-learn              1.0.2
-- python                    3.9.12
+- scikit-learn              1.3.2
+- python                    3.10.12
 
 ### Installation
 
 ```
-git clone https://github.com/WeilabMSU/TopoFormer.git
+git clone https://github.com/ExpectozJJ/MT-TopLap
 ```
 
 ---
