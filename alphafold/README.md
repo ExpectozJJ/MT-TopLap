@@ -25,3 +25,9 @@ root
 .
 .    
 ```
+
+### Preprocessing 
+```shell
+cd ./alphafold/
+python preprocess.py 
+```
