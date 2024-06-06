@@ -25,6 +25,19 @@ The multitask deep learning architecture of MT-TopLap model is shown below.
 ```
 git clone https://github.com/ExpectozJJ/MT-TopLap
 ```
+
+## Multi-task Pre-training Datasets
+
+| Dataset                                                            | No. of samples | PDB ID                                                                       |
+|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------------------------|
+| RBD-ACE2-1                                     | 3669                                | 6M0J                                                  |
+| RBD-ACE2-2                                    | 1539                                | 6M0J                                                  |
+| RBD-ACE2-3                            | 2223                                | 6M0J                                                  |
+| RBD-CTC-455.2-1                             | 1539                                | 7KL9                                                    |
+| RBD-CTC-455.2-2                            | 2831                                | 7KL9                                                    |
+| BA.1-RBD-ACE2                            | 3800                                | 7T9L                                                   |
+| BA.2-RBD-ACE2                                 | 3686                                | 7XB0                                                  |
+| CAPRI  | 1862                                | 3R2X |
 ## 10-fold Cross-Validation Benchmarking 
 | Dataset    | No. of Samples | No. of PPIs | PDB Source                      |
 |------------|----------------|-------------|---------------------------------|
