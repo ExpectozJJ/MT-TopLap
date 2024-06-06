@@ -3,7 +3,7 @@
 ## Model Architecture
 
 The multitask deep learning architecture of MT-TopLap model is shown below.
-
+![Model Architecture](./MT-TopLap_dark.png#gh-dark-mode-only)
 ![Model Architecture](./MT-TopLap.png#gh-light-mode-only)
 
 Further explain the details in the [paper](https://github.com/ExpectozJJ/MT-TopLap), providing context and additional information about the architecture and its components.
