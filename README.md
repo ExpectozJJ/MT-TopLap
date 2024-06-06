@@ -49,6 +49,16 @@ git clone https://github.com/ExpectozJJ/MT-TopLap
 | Original   | 8338           | 319         | Download from RCSB              |
 | AlphaFold3 | 8330           | 317         | Download from AlphaFold Server  |
 
+## Downstream DMS Tasks
+| Dataset         | No. of samples | PDB ID |
+|-----------------|----------------|--------|
+| RBD-hACE2       | 3649           | 6M0J   |
+| RBD-cACE2       | 3625           | 7C8D   |
+| RBD-bACE2       | 3646           | 7XA7   |
+| RBD-dACE2       | 3487           | 8HG0   |
+| BA.2-RBD-hACE2  | 3668           | 7ZF7   |
+| BA.2-RBD-haACE2 | 3724           | 7YV8   |
+
 ---
 ## Preparing Topologial Sequence
 
