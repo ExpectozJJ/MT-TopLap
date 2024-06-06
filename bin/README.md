@@ -1,7 +1,7 @@
 ## Installation 
 
 The following files can be stored here. 
-* **bin**
+* **Software Files**
     * jackal.dir
     * jackal_64bit
     * profix (global call)
