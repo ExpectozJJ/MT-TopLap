@@ -95,6 +95,7 @@ python PPIfeature_seq.py 1A4Y A B A D 435 A 7.0
 | MT-TopLap<sub>AF3</sub> | 0.86 | Freeze Last 3 Layers  | AlphaFold3 |
 | MT-TopLap<sup>F</sup>         | 0.85 | Freeze First 3 Layers | RCSB       |
 
+## Execute Model
 ```shell
 usage: PPI_multitask_DMS_mega.py [-h] [--batch_size BATCH_SIZE] [--epochs EPOCHS] [--lr LR] [--momentum MOMENTUM]
                                  [--weight_decay WEIGHT_DECAY] [--no_cuda] [--seed SEED] [--log_interval LOG_INTERVAL]
