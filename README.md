@@ -20,12 +20,6 @@ The multitask deep learning architecture of MT-TopLap model is shown below.
 - scikit-learn              1.3.2
 - python                    3.10.12
 
-### Installation
-
-```
-git clone https://github.com/ExpectozJJ/MT-TopLap
-```
-
 ## Multi-task Pre-training Datasets
 
 | Dataset                                                            | No. of samples | PDB ID                                                                       |
