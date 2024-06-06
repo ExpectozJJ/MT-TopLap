@@ -4,7 +4,7 @@
 
 The multitask deep learning architecture of MT-TopLap model is shown below.
 
-![Model Architecture](MT-TopLap.png)
+![Model Architecture](MT-TopLap.jpg)
 
 Further explain the details in the [paper](https://github.com/ExpectozJJ/MT-TopLap), providing context and additional information about the architecture and its components.
 
