@@ -57,6 +57,8 @@ git clone https://github.com/ExpectozJJ/MT-TopLap
 | BA.2-RBD-hACE2  | 3668           | 7ZF7   |
 | BA.2-RBD-haACE2 | 3724           | 7YV8   |
 
+The PDB files, mutation locations and mutation-induced binding free energy changes can be found in ./downstream/.
+
 ---
 ## Feature generation
 ```shell
