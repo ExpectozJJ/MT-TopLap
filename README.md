@@ -58,21 +58,40 @@ The PDB files, mutation locations and mutation-induced binding free energy chang
 
 ---
 ## Feature generation
+### BLAST Features
 ```shell
-# get the usage
-python PPIprepare.py
+# Generate PSSM scoring matrix (Requires BLAST+ 2.10.1 and GCC 9.3.0)
+python PPIprepare.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
 
 # examples
-python ./code_pkg/main_potein_ligand_topo_embedding.py --output_feature_folder "../examples/output_topo_seq_feature_result" --protein_file "../examples/protein_ligand_complex/1a1e/1a1e_pocket.pdb" --ligand_file "../examples/protein_ligand_complex/1a1e/1a1e_ligand.mol2" --dis_start 0 --dis_cutoff 5 --consider_field 20
+python PPIprepare.py 1A4Y A B A D 435 A 7.0 
 ```
 
+### MIBPB Features 
+Refer to https://weilab.math.msu.edu/MIBPB/ 
 
+### Topological and auxiliary Features 
+```shell
+# Generate persistent homology and auxiliary features
+python PPIfeature.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
+python PPIfeature_Lap.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
 
+# examples
+python PPIfeature.py 1A4Y A B A D 435 A 7.0
+python PPIfeature_Lap.py 1A4Y A B A D 435 A 7.0 
+```
+
+### ESM Features 
+```shell
+# Generate transformer features
+python PPIfeature_seq.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
+
+# examples
+python PPIfeature_seq.py 1A4Y A B A D 435 A 7.0
+```
 
 ---
-
 ## Results
-
 
 #### Pretrained models
 - Pretrained TopoFormer model large. [Download](https://weilab.math.msu.edu/Downloads/TopoFormer/TopoFormer_s_pretrained_model.zip)
