@@ -97,32 +97,13 @@ python ./code_pkg/main_potein_ligand_topo_embedding.py --output_feature_folder "
 
 Note, there are 20 TopoFormers are trained for each dataset with distinct random seeds to address initialization-related errors. And 20 gradient boosting regressor tree (GBRT) models are subsequently trained one these sequence-based features, which predictions can be found in the [results](./Results) folder. Then, 10 models were randomly selected from TopoFormer and GBDT models, respectively, the consensus predictions of these models was used as the final prediction result. The performance shown in the table is the average result of this process performed 400 times.
 
-- Docking
-
-
-| Finetuned for docking                                                | Success rate |
-|-------------------------------------------------                     |-             |
-| CASF-2007 [result](./Results)| 93.3%         |
-| CASF-2013 [result](./Results)| 91.3%         |
-
-- Screening
-
-| Finetuned for screening                                              |Success rate on 1%|Success rate on 5%|Success rate on 10%|EF on 1%|EF on 5%|EF on 10%|
-|-                                                                     | - | - | - | - | - | - |
-| CASF-2013 |68%|81.5%|87.8%|29.6|9.7|5.6|
-
-Note, the EF here means the enhancement factor. Each target protein has a finetuned model. [result](./Results) contains all predictions.
-
 ---
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## Citation
-
 If you use this code or the pre-trained models in your work, please cite our work. 
 - JunJie Wee and Guo-Wei Wei. "Benchmarking AlphaFold3's protein-protein complex accuracy and machine learning prediction reliability for binding free energy changes upon mutation."
 - JunJie Wee, Jiahui Chen and Guo-Wei Wei. "Preventing future zoonosis: SARS-CoV-2 mutations enhancing human-animal cross-transmission."
