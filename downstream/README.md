@@ -93,13 +93,13 @@ python PPIfeature_seq.py 1A4Y A B A D 435 A 7.0
 ---
 ## Validation Results
 
-| Method                | R<sub>p</sub>  |
-|-----------------------|------|
-| MT-TopLap             | 0.88 |
-| MT-TopLap<sup>E</sup>         | 0.88 |
-| MT-TopLap<sup>O</sup>         | 0.88 |
-| MT-TopLap<sub>AF3</sub> | 0.86 |
-| MT-TopLap<sup>F</sup>         | 0.85 |
+| Method                | R_p  | Description           | PDB Source |
+|-----------------------|------|-----------------------|------------|
+| MT-TopLap             | 0.88 | Freeze Last 3 Layers  | RCSB       |
+| MT-TopLap<sup>E</sup>          | 0.88 | Freeze Even Layers    | RCSB       |
+| MT-TopLap<sup>O</sup>         | 0.88 | Freeze Odd Layers     | RCSB       |
+| MT-TopLap<sub>AF3</sub>  | 0.86 | Freeze Last 3 Layers  | AlphaFold3 |
+| MT-TopLap<sup>F</sup>          | 0.85 | Freeze First 3 Layers | RCSB       |
 
 ```shell
 usage: PPI_multitask_DMS_mega.py [-h] [--batch_size BATCH_SIZE] [--epochs EPOCHS] [--lr LR] [--momentum MOMENTUM]
