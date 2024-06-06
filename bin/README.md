@@ -2,10 +2,11 @@
 
 The following files can be stored here. 
 * **Software Files**
-    * jackal.dir
-    * jackal_64bit
+    * jackal.dir (https://honig.c2b2.columbia.edu/jackal) (Remember to change the directory to this location on your local environment)
+    * jackal_64bit (https://honig.c2b2.columbia.edu/jackal)
     * profix (global call)
     * scap (global call)
     * **SPIDER2_local** 
     * mibpb5 (global call)
     * MS_Intersection (global call)
+    * PDB2PQR 
