@@ -60,11 +60,10 @@ git clone https://github.com/ExpectozJJ/MT-TopLap
 | BA.2-RBD-haACE2 | 3724           | 7YV8   |
 
 ---
-## Preparing Topologial Sequence
-
+## Feature generation
 ```shell
 # get the usage
-python ./code_pkg/main_potein_ligand_topo_embedding.py -h
+python PPIprepare.py
 
 # examples
 python ./code_pkg/main_potein_ligand_topo_embedding.py --output_feature_folder "../examples/output_topo_seq_feature_result" --protein_file "../examples/protein_ligand_complex/1a1e/1a1e_pocket.pdb" --ligand_file "../examples/protein_ligand_complex/1a1e/1a1e_ligand.mol2" --dis_start 0 --dis_cutoff 5 --consider_field 20
