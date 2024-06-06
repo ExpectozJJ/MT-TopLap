@@ -91,13 +91,7 @@ python PPIfeature_seq.py 1A4Y A B A D 435 A 7.0
 ```
 
 ---
-## Results
-
-#### Pretrained models
-- Pretrained TopoFormer model large. [Download](https://weilab.math.msu.edu/Downloads/TopoFormer/TopoFormer_s_pretrained_model.zip)
-
-#### Finetuned models and performances
-- Scoring
+## Validation Results
 
 | Finetuned for scoring                                                | Training Set                  | Test Set| PCC | RMSE (kcal/mol) |
 |-------------------------------------------------                     |-------------                  |---------|-    |-                |
@@ -119,7 +113,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## Citation
-If you use this code or the pre-trained models in your work, please cite our work. 
+If you use this code in your work, please cite our work. 
 - JunJie Wee and Guo-Wei Wei. "Benchmarking AlphaFold3's protein-protein complex accuracy and machine learning prediction reliability for binding free energy changes upon mutation."
 - JunJie Wee, Jiahui Chen and Guo-Wei Wei. "Preventing future zoonosis: SARS-CoV-2 mutations enhancing human-animal cross-transmission."
 ---
