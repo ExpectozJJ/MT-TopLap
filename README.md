@@ -7,15 +7,11 @@
 
 </div>
 
-**Title** - Potential mutations from animal-adapted SARS-CoV-2 that strengthen infectivity on humans
-**Authors** - JunJie Wee, Jiahui Chen and Guo-wei Wei
-
 ---
 ## Table of Contents
 
 - [MT-TopLap](#topoformer)
   - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
   - [Model Architecture](#model-architecture)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -30,14 +26,7 @@
   - [Citation](#citation)
   - [Acknowledgements](#acknowledgements)
 
----
-
-## Introduction
-The COVID-19 pandemic has resulted in a significant SARS-CoV-2 virus evolution, providing a notable advantage in infecting humans using its subvariants. However, such an advantage may not be universal when the virus infect animals. In this work, we hypothesize that as the virus evolution is adapted on animals, it may not necessarily evolve to become more infectious to humans. Nevertheless, there is still a possibility that the virus undergoes a gain-of-function mutation, accelerating virus evolution on humans after evolving on animals. Here, we propose a multitask deep learning model MT-TopLap which simultaneously trains on several deep mutational scanning datasets. MT-TopLap is also validated and finetuned with the largest protein-protein interactions database, SKEMPI 2.0. The resulting MT-TopLap model predicts binding free energy changes upon mutation for RBD binded with human, cat, bat, deer and hamster ACE2 complexes. By comparing the binding free energy changes upon mutation across the different RBD-ACE2s, we identified key RBD mutations such as Q498H in animal-adapted SARS-CoV-2 and R493K in hamster-adapated BA.2 variant having high likelihood to accelerate virus evolution on humans.
-
-> **Keywords**: COVID-19, SARS-CoV-2, BA.2, deep mutational scanning, infectivity, multitask deep learning
-
----
+--
 
 ## Model Architecture
 
