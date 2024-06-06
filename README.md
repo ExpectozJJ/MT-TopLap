@@ -1,32 +1,4 @@
-# MT-TopLap
-
-<div align='center'>
- 
-<!-- [![preprint](https://img.shields.io/static/v1?label=arXiv&message=2310.12508&color=B31B1B)](https://www.google.com/) -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DOI](https://zenodo.org/badge/DOI/YOUR_DOI.svg)](https://doi.org/10.5281/zenodo.10892800)
-
-</div>
-
----
-## Table of Contents
-
-- [MT-TopLap](#topoformer)
-  - [Table of Contents](#table-of-contents)
-  - [Model Architecture](#model-architecture)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Datasets](#datasets)
-  - [Preparing Topologial Sequence](#preparing-topologial-sequence)
-  - [Fine-Tuning Procedure for Customized Data](#fine-tuning-procedure-for-customized-data)
-  - [Results](#results)
-      - [Pretrained models](#pretrained-models)
-      - [Finetuned models and performances](#finetuned-models-and-performances)
-  - [License](#license)
-  - [Citation](#citation)
-  - [Acknowledgements](#acknowledgements)
-
---
+# MT-TopLap <!-- [![preprint](https://img.shields.io/static/v1?label=arXiv&message=2310.12508&color=B31B1B)](https://www.google.com/) --> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Model Architecture
 
