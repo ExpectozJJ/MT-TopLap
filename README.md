@@ -19,6 +19,7 @@ The multitask deep learning architecture of MT-TopLap model is shown below.
 - pytorch-cuda              11.7
 - scikit-learn              1.3.2
 - python                    3.10.12
+- Softwares to be installed for ./bin folder (See README at bin)
 
 ## Multi-task Pre-training Datasets
 
