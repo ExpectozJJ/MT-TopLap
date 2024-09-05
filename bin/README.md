@@ -9,4 +9,7 @@ The following files can be stored here.
     * **SPIDER2_local** 
     * mibpb5 (global call)
     * MS_Intersection (global call)
-    * PDB2PQR 
+    * PDB2PQR
+    * BLAST+ 2.10.1
+    * GCC 9.3.0
+    * OpenMPI 4.0.3
