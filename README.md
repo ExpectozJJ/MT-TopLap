@@ -53,7 +53,7 @@ The PDB files, mutation locations and mutation-induced binding free energy chang
 
 ---
 ## Feature generation
-### BLAST Features
+### BLAST+ PSSM calculation
 ```shell
 # Generate PSSM scoring matrix (Requires BLAST+ 2.10.1 and GCC 9.3.0)
 python PPIprepare.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
@@ -62,10 +62,10 @@ python PPIprepare.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation ch
 python PPIprepare.py 1A4Y A B A D 435 A 7.0 
 ```
 
-### MIBPB Features 
+### MIBPB calculation
 Refer to https://weilab.math.msu.edu/MIBPB/ 
 
-### Topological and auxiliary Features 
+### Persistent Laplacian and Auxiliary Features 
 ```shell
 # Generate persistent homology and auxiliary features
 python PPIfeature.py <PDB ID> <Partner A chains> <Partner B chains> <Mutation chain> <Wild Residue> <Residue ID> <Mutant Residue> <pH>
