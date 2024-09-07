@@ -150,5 +150,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citation
 If you use this code in your work, please cite our work. 
 - JunJie Wee, Guo-Wei Wei. Evaluation of AlphaFold 3’s Protein–Protein Complexes for Predicting Binding Free Energy Changes upon Mutation. Journal of Chemical Information and Modeling (2024). DOI: 10.1021/acs.jcim.4c00976
-- JunJie Wee, Jiahui Chen, Kelin Xia, Guo-Wei Wei. Preventing future zoonosis: SARS-CoV-2 mutations enhance human–animal cross-transmission. Computers in Biology and Medicine 182 (2024). 109101. DOI: 10.1016/j.compbiomed.2024.109101
+- JunJie Wee, Jiahui Chen, Guo-Wei Wei. Preventing future zoonosis: SARS-CoV-2 mutations enhance human–animal cross-transmission. Computers in Biology and Medicine 182 (2024). 109101. DOI: 10.1016/j.compbiomed.2024.109101
 ---
