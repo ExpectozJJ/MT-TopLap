@@ -84,6 +84,7 @@ python PPIfeature_seq.py <PDB ID> <Partner A chains> <Partner B chains> <Mutatio
 # examples
 python PPIfeature_seq.py 1A4Y A B A D 435 A 7.0
 ```
+The jobs folder contain the codes used to run feature generation process in a step-by-step procedure. 
 
 ---
 ## Validation Results
